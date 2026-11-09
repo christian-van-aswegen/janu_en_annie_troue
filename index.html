@@ -281,6 +281,80 @@
         fill: currentColor;
         }
 
+        .uber-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #000000;
+        color: #ffffff;
+        padding: 12px 22px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+        font-size: 0.95rem;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .uber-btn:hover {
+        background-color: #222222;
+        color: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+        }
+
+        .uber-btn:active {
+        transform: translateY(0);
+        }
+
+        .uber-icon {
+        flex-shrink: 0;
+        fill: currentColor;
+        }
+
+        .search-buttons {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+
+        .platform-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 10px 18px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-family: 'Montserrat', system-ui, sans-serif;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .platform-btn svg {
+        flex-shrink: 0;
+        }
+
+        .platform-btn:hover {
+        transform: translateY(-2px);
+        opacity: 0.92;
+        }
+
+        .booking-btn {
+        background-color: #003580;
+        color: #ffffff;
+        }
+
+        .airbnb-btn {
+        background-color: #FF5A5F;
+        color: #ffffff;
+        }
+
     </style>
     <!-- Google Font for names script style -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
@@ -362,6 +436,49 @@
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_vjH7TjC0mwqiw7DJ_G8ljwNZjIPYZuU8jrMPesJMlS1phA/viewform?usp=header" target="_blank" class="btn">RSVP Here</a>
             </div>
 
+            <div class="section">
+                <h2>Accommodation Options</h2>
+
+                <!-- <div class="search-banner"> -->
+                    <!-- <div class="search-banner-content"> -->
+                <h3>Search Local Stays Online</h3>
+                <!-- </div> -->
+                <div class="search-buttons">
+                    <!-- Booking.com Button -->
+                    <a href="https://www.booking.com/searchresults.html?ss=Toadbury+Hall%2C+1747&ssne=Muldersdrift&ssne_untouched=Muldersdrift&efdco=1&label=mkt123sc-2a9610e2-b4fd-47fe-a08a-4d7918feee14&aid=304142&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=710ke7u6-2d61bc68c8574e5f9fdd693cbfb20c3d-en&dest_type=latlong&latitude=-25.9489831&longitude=27.878226&ac_meta=IAAoBDICZW5aClJlc3RhdXJhbnQ%3D&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=1&search_selected=true&search_pageview_id=069fb7af16c503567890fa0caa90fee9&checkin=2027-01-29&checkout=2027-01-31&group_adults=2&no_rooms=1&group_children=0" target="_blank" rel="noopener noreferrer" class="platform-btn booking-btn">
+                        <!-- <svg class="brand-logo" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M2.5 19h7.4c2.8 0 4.6-1.4 4.6-3.6 0-1.6-1-2.7-2.6-3.1v-.1c1.2-.5 2-1.5 2-2.8 0-2.1-1.7-3.4-4.2-3.4H2.5V19zm3.4-10.2h3.5c1.2 0 1.9.6 1.9 1.5s-.7 1.6-1.9 1.6H5.9V8.8zm0 5.4h3.8c1.3 0 2.2.7 2.2 1.7 0 1-.9 1.7-2.2 1.7H5.9v-3.4zM20.5 16.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/>
+                        </svg> -->
+                        <span>Booking.com</span>
+                    </a>
+
+                    <!-- Airbnb Button -->
+                    <a href="https://www.airbnb.com/s/Toadbury-Hall-Hotel--Restaurants-%26-Function-Venues--Krugersdorp--South-Africa/homes?acp_id=cb03971f-becd-4337-ade9-83bb21aa96f4&checkin=2027-01-29&checkout=2027-01-31&date_picker_type=calendar&flexible_trip_dates%5B%5D=january&ref_fsid=71c6e65a-724d-49d5-86c1-be72d33ad89c&ref_search_session_id=888c3757-064a-4485-987a-dc434c60b5c4&search_mode=regular_search&place_id=ChIJ-85VJO6ZlR4R9wpcRKiy790&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&ne_lat=-25.86659384739084&sw_lat=-26.046908343487235&ne_lng=27.941113090298842&sw_lng=27.80717302943259&monthly_start_date=2026-12-01&monthly_length=3&monthly_end_date=2027-03-01&search_by_map=true&price_filter_input_type=0&price_filter_num_nights=2&channel=EXPLORE&zoom=11.882392698419958&search_type=user_map_move&zoom_level=11.882392698419958" target="_blank" rel="noopener noreferrer" class="platform-btn airbnb-btn">
+                        <!-- <svg class="brand-logo" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 1.25c-2.42 0-4.14 1.76-5.54 4.19-1.57 2.73-2.88 6.55-4.08 10.93-1.07 3.9-1.88 7.7-1.88 10.23 0 4.14 3.19 7.02 8.31 7.02 5.11 0 8.31-2.88 8.31-7.02 0-2.53-.81-6.33-1.88-10.23-1.2-4.38-2.51-8.2-4.08-10.93-1.4-2.43-3.12-4.19-5.54-4.19zm0 2.5c1.23 0 2.27 1.05 3.37 2.96 1.34 2.33 2.56 5.8 3.66 9.8 1.02 3.73 1.72 7.17 1.72 8.87 0 2.68-1.92 4.02-5.31 4.02-3.39 0-5.31-1.34-5.31-4.02 0-1.7.7-5.14 1.72-8.87 1.1-4 2.32-7.47 3.66-9.8 1.1-1.91 2.14-2.96 3.37-2.96zm0 10.75a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm0 2a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/>
+                        </svg> -->
+                        <span>Airbnb</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Uber / Bolt -->
+            <div class="section">
+                <h2>Late night transport</h2>
+                <h3>Uber is only available through pre-booking</h3>
+
+                <!-- UBER BUTTON HTML -->
+                <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[latitude]=-25.960965&dropoff[longitude]=27.8761234&dropoff[nickname]=Toadbury%20Hall%20Country%20Hotel" target="_blank" rel="noopener noreferrer" class="uber-btn">
+                <svg class="uber-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.04 3H5.81l1.04-3zM19 17H5v-4h14v4z"/>
+                    <circle cx="7.5" cy="14.5" r="1.5"/>
+                    <circle cx="16.5" cy="14.5" r="1.5"/>
+                </svg>
+                <span>Book an Uber</span>
+                </a>
+
+            </div>
+
             <!-- Gift Section -->
             <div class="section">
                 <!-- <h2>Gift</h2> -->
@@ -380,6 +497,15 @@
             </div>
 
         </div>
+
+        <!-- ACCOMMODATION SECTION -->
+        <!-- <div class="section" id="accommodation"> -->
+            <!-- <div class="section-title"> -->
+                <!-- <span class="section-icon">🏨</span> -->
+            <!-- <h2>Accommodation Options</h2> -->
+            <!-- </div> -->
+
+        
 
         <!-- Verloof Foto Section -->
         <div class="section">
